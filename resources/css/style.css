@@ -1,6 +1,6 @@
 /* Universal Styles */
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-size: 16px;
 }
 
@@ -46,8 +46,43 @@ header nav ul {
   padding-right: 1.5rem;
 }
 
+nav li {
+  padding-left: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
 header .mobile {
   display: none;
 }
 
 /* Main Content */
+
+  /* Features Section */
+.start-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  width: 100%;
+}
+
+#start-banner {
+  background-image: url(./images/banner.jpg);
+  background-size: cover;
+  width: 60%;
+  height: auto;
+}
+
+/* #start-banner img {
+  padding-left: 1.5rem;
+  width: 60%;
+  height: auto;
+} */
+
+#start-text {
+  margin-left: 1.5rem;
+}
