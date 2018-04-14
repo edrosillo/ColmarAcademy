@@ -62,27 +62,33 @@ header .mobile {
 /* Main Content */
 
   /* Features Section */
+.start {
+  background-color: gray;
+}
+
 .start-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: gray;
-  width: 100%;
 }
 
-#start-banner {
-  background-image: url(./images/banner.jpg);
-  background-size: cover;
-  width: 60%;
-  height: auto;
-}
-
-/* #start-banner img {
+ .start-container img {
+   width: 60%;
+   height: auto;
   padding-left: 1.5rem;
-  width: 60%;
-  height: auto;
-} */
+}
 
 #start-text {
+  width: 40%;
   margin-left: 1.5rem;
+}
+
+#start-text h1 {
+  font-size: 3.5rem;
+  line-height: 3rem;
+  font-weight: bold;
+}
+
+#start-text .button {
+
 }
