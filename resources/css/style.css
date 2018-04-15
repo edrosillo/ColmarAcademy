@@ -1,6 +1,6 @@
 /* Universal Styles */
 html {
-  font-family: "Roboto", "Helvetica", sans-serif;
+  font-family: "Open Sans", "Helvetica", sans-serif;
   font-size: 16px;
 }
 
@@ -75,7 +75,9 @@ header .mobile {
  .start-container img {
    width: 60%;
    height: auto;
-  padding-left: 1.5rem;
+   padding-left: 1.5rem;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
 }
 
 #start-text {
@@ -86,9 +88,235 @@ header .mobile {
 #start-text h1 {
   font-size: 3.5rem;
   line-height: 3rem;
-  font-weight: bold;
+  font-weight: 900;
+}
+
+#start-text p {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-weight: 600;
 }
 
 #start-text .button {
+  border-radius: 1px;
+  background-color: darkgray;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.25rem 7.25rem;
+  margin-top: 2rem;
+  width: 40%;
+}
 
+  /* Campus Section */
+
+.campus-container {
+  display: flex;
+}
+
+#campus-banner {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.campus-container #campus-banner img {
+  width: 100%;
+  height: auto;
+}
+
+#campus-banner h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 900;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+#campus-banner p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-bottom: 2rem;
+}
+
+#campus-banner span {
+  font-weight: 600;
+}
+
+.campus-side {
+  display: flex;
+  flex-flow: column;
+  width: 40%;
+  padding-top: 2rem;
+}
+
+.cside {
+  border: 1px gray solid;
+  display: flex;
+  align-items: center;
+}
+
+.cside:hover {
+  background-color: darkgray;
+}
+
+.cside img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.cside .cstext {
+  width: 65%;
+}
+
+.cside h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.cside p {
+  padding: 0.5rem 0;
+}
+
+  /* Course Section */
+
+.courses {
+  background-color: gray;
+}
+
+.courses h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 900;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.courses-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-bottom: 2rem;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background-color: white;
+  margin: 1rem;
+}
+
+.course .course-image img {
+  width: 100%;
+  height: auto;
+}
+
+.course-text {
+  margin: 1rem 1rem 1.5rem 1rem;
+}
+
+.course h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.course p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+  /* Thesis Section */
+
+.thesis h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 900;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.thesis-container {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.thesis-video {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.thesis-video video {
+  width: 100%;
+  height: auto;
+}
+
+.thesis-video h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.thesis-video p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-bottom: 2rem;
+  line-height: 1.7rem;
+}
+
+.thesis-side {
+  display: flex;
+  flex-flow: column;
+  width: 40%;
+  padding-top: 1rem;
+}
+
+.tside {
+  display: flex;
+  align-items: center;
+}
+
+.tside:hover {
+  background-color: darkgray;
+}
+
+.tside img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.tside .tstext {
+  width: 65%;
+}
+
+.tside h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.tside p {
+  padding: 0.5rem 0;
+}
+
+/* Footer */
+
+footer {
+  border-top: 1px gray solid;
+  display: flex;
+  height: 3rem;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+}
+
+#copyright {
+  flex-grow: 1;
+}
+
+#legal a {
+  color: black;
+  text-decoration: none;
+  padding-left: 0.8rem;
 }
