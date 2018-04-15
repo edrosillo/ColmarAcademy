@@ -83,6 +83,26 @@ header .mobile {
   display: none;
 }
 
+/* Header Media Queries*/
+@media only screen and (max-width: 600px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+  }
+
+}
+
 /* Main Content */
 
   /* Features Section */
@@ -131,6 +151,35 @@ header .mobile {
   margin-top: 2rem;
   width: 40%;
 }
+
+  /* Features Section Media Queries*/
+
+@media only screen and (max-width: 600px) {
+    .start-container {
+      flex-direction: column;
+    }
+
+    .start-container img {
+      width: 100%;
+      height: auto;
+      padding: 0;
+    }
+
+    #start-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 2rem 1rem;
+      margin-left: 0;
+    }
+
+    #start-text .button {
+      width: 40%;
+    }
+}
+
 
   /* Campus Section */
 
@@ -207,6 +256,18 @@ header .mobile {
   text-decoration: none;
   color: #45a7e0;
 }
+
+  /* Campus Section Media Queries*/
+@media only screen and (max-width: 600px) {
+  #campus-banner {
+    display: none;
+  }
+
+  .campus-side {
+    width: 100%;
+  }
+}
+
 
   /* Course Section */
 
@@ -339,6 +400,7 @@ footer {
   display: flex;
   height: 3rem;
   padding: 1rem 1.5rem 2rem 1.5rem;
+  background-color: #e3f7f6
 }
 
 #copyright {
