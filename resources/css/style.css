@@ -10,7 +10,7 @@ h1 {
 
 .main-content {
   position: relative;
-  top: 3.5rem;
+  top: 4rem;
 }
 
 .content {
@@ -29,6 +29,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 4px 0 rgba(163, 163, 163, 0.5);
 }
 
 header .logo {
@@ -57,6 +58,7 @@ header .logo {
 
 #colmar {
   font-weight: 600;
+  color: black;
 }
 
 #academy {
@@ -84,7 +86,7 @@ header .mobile {
 }
 
 /* Header Media Queries*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   header .desktop {
     display: none;
   }
@@ -114,6 +116,7 @@ header .mobile {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 3px 0 rgba(163, 163, 163, 0.5);
 }
 
  .start-container img {
@@ -131,7 +134,6 @@ header .mobile {
 
 #start-text h1 {
   font-size: 3.5rem;
-  line-height: 3rem;
   font-weight: 900;
 }
 
@@ -142,7 +144,7 @@ header .mobile {
 }
 
 #start-text .button {
-  border-radius: 1px;
+  border: 1px #647a79 solid;
   background-color: #647a79;
   color: #e3f7f6;
   font-size: 2rem;
@@ -152,11 +154,18 @@ header .mobile {
   width: 40%;
 }
 
+#start-text .button:hover {
+  background-color: #e3f7f6;
+  color: #647a79;
+  transition: background-color 0.6s linear;
+}
+
   /* Features Section Media Queries*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     .start-container {
       flex-direction: column;
+      width: 100%;
     }
 
     .start-container img {
@@ -168,11 +177,20 @@ header .mobile {
     #start-text {
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       width: 100%;
-      padding: 2rem 1rem;
+      padding: 2rem 2rem;
       margin-left: 0;
+    }
+
+    #start-text h1 {
+      font-size: 2.7rem;
+      padding: 0 2rem;
+    }
+
+    #start-text p {
+      padding: 0 2rem;
     }
 
     #start-text .button {
@@ -185,6 +203,7 @@ header .mobile {
 
 .campus-container {
   display: flex;
+  box-shadow: 0 0 5px 0 rgba(163, 163, 163, 0.5);
 }
 
 #campus-banner {
@@ -262,7 +281,7 @@ header .mobile {
 }
 
   /* Campus Section Media Queries*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   #campus-banner {
     display: none;
   }
@@ -306,8 +325,17 @@ header .mobile {
     margin: 0;
   }
 
+  .cstext h3 {
+    font-size: 2.2rem;
+  }
+
   .cstext p {
-    padding: 1.2rem 0;
+    font-size: 1.2rem;
+    padding: 1.1rem 0;
+  }
+
+  .cside a {
+    font-size: 1.1rem;
   }
 }
 
@@ -331,6 +359,7 @@ header .mobile {
   justify-content: center;
   flex-flow: row wrap;
   padding-bottom: 2rem;
+  box-shadow: 0 0 3px 0 rgba(163, 163, 163, 0.5);
 }
 
 .course {
@@ -339,6 +368,7 @@ header .mobile {
   width: 25%;
   background-color: white;
   margin: 1rem;
+  box-shadow: 0 2px 3px 2px rgba(163, 163, 163, 0.5);
 }
 
 .course .course-image img {
@@ -362,7 +392,7 @@ header .mobile {
   padding-top: 0.5rem;
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 750px)  {
   .courses h1 {
     margin-bottom: 1.5rem;
   }
@@ -463,7 +493,7 @@ header .mobile {
   padding: 0.5rem 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   .thesis-video {
     width: 100%;
     padding: 1rem 0;
@@ -503,7 +533,7 @@ footer {
   padding-left: 0.8rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   footer {
     height: 4rem;
   }
